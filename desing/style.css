@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #9cffb0;
+  line-height: 1.6;
+}
+
+/* Contenedor general */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  border-bottom: 1px dashed #00ff88;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Sección principal */
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+/* Contenido principal */
+.content {
+  flex: 3;
+  border: 1px dashed #00ff88;
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+}
+
+.content button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid #00ff88;
+  color: #9cffb0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content button:hover {
+  background-color: #00ff88;
+  color: #000;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  border: 1px dashed #00ff88;
+  padding: 15px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  color: #00ff88;
+}
+
+/* Sección características */
+.features {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px dashed #00ff88;
+  border-bottom: 1px dashed #00ff88;
+  padding: 40px 0;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  margin-bottom: 20px;
+}
+
+.feature-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid #00ff88;
+  color: #9cffb0;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px dashed #00ff88;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
