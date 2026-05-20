@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Filtro de Streamers Avanzado</title>
+</head>
+<body>
+
+  
+  <input type="text" data-function="toFilterStreamers" placeholder="Escribe aquí..."/>
+
+  <script>
+    // El array de JavaScript que nos da este enunciado
+    const streamers = [
+      {name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+      {name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+      {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+      {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+    ];
+
+    // 1. Capturamos el input del HTML
+    const input$$ = document.querySelector('[data-function="toFilterStreamers"]');
+
+    // 2. Escuchamos lo que escribe el usuario en tiempo real
+    input$$.addEventListener('input', (event) => {
+      // Guardamos el texto introducido en minúsculas
+      const valorInput = event.target.value.toLowerCase();
+
+      // 3. Aplicamos el .filter() comparando con el nombre en minúsculas
+      const streamersFiltrados = streamers.filter(streamer => 
+        streamer.name.toLowerCase().includes(valorInput)
+      );
+
+      // 4. Lo mostramos por consola
+      console.clear(); 
+      console.log(streamersFiltrados);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
